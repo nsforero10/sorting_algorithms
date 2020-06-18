@@ -20,7 +20,8 @@ listint_t *_switch(listint_t *m, listint_t *n, listint_t **lis)
 }
 
 /**
- * insertion_sort_list - sorts 
+ * insertion_sort_list - sorts a doubly linked list of integers in
+ * ascending order using the Insertion sort algorithm
  * @list: the list
  * Return: nothing
  */
@@ -37,7 +38,8 @@ void insertion_sort_list(listint_t **list)
 	{
 		p = crrnt->prev;
 		b = crrnt;
-		while(b->prev && b->n < p->n){
+		while (b->prev && b->n < p->n)
+		{
 			crrnt = _switch(p, b, list);
 			print_list(*list);
 			if (!b->prev)
@@ -47,5 +49,4 @@ void insertion_sort_list(listint_t **list)
 		crrnt = crrnt->next;
 		p = p->next;
 	}
-	
 }
