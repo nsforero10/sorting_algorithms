@@ -3,8 +3,9 @@
 /**
  * bubble_sosrt - sorts an array of integers in ascending
  * order using the Bubble sort algorithm
- * @array
- *
+ * @array: the array
+ * @size: the size
+ * Return: nothing
  */
 void bubble_sort(int *array, size_t size)
 {
@@ -14,7 +15,7 @@ void bubble_sort(int *array, size_t size)
 	if (size < 2)
 		return;
 
-	while ( i <  size - 1)
+	while (i <  size - 1)
 	{
 		j = 0;
 		while ( j < size - 1 )
